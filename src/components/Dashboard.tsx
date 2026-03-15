@@ -56,7 +56,7 @@ export default function Dashboard() {
           }
         ]);
 
-        const logs = await fetch(`${API_URL}/api/logs`).catch(() => null);
+        const logs = await fetch(`${API_URL}/api/admin/logs`).catch(() => null);
 
         if (logs && logs.ok) {
           const logData = await logs.json();
