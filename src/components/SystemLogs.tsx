@@ -26,7 +26,7 @@ export default function SystemLogs() {
   async function loadLogs() {
     try {
 
-      const res = await fetch(`${API_URL}/api/logs`);
+      const res = await fetch(`${API_URL}/api/admin/logs`);
 
       if (!res.ok) throw new Error("Failed to load logs");
 
